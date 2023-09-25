@@ -6,19 +6,25 @@
 #define STACK_MAX_SIZE 5
 #define STACK_DEBUG 
 
-typedef struct stack_ds
+typedef struct
 {
+	sint32_t data[STACK_MAX_SIZE];
 	sint32_t stack_pointer;
-	uint32_t data[STACK_MAX_SIZE];
 }stack_ds_t;
 
-typedef enum stack_status
+typedef enum
 {
 	STACK_FULL,
 	STACK_NOT_FULL,
 	STACK_EMPTY,
 	STACK_NOT_EMPTY
 }stack_status_t;
+
+typedef enum
+{
+	R_NOK,
+	R_OK
+}return_status_t;
 
 /**
   * @brief  This function initializes the stack
@@ -33,7 +39,7 @@ return_status_t stack_init(stack_ds_t* my_stack);
   * @param  value  value to be pushed to the stack
   * @return return_status_t
   */
-return_status_t stack_push(stack_ds_t* my_stack, sint32_t  value);
+return_status_t stack_push(stack_ds_t* my_stack, sint32_t data);
 
 /**
   * @brief  This function pops an element from the stack
@@ -41,14 +47,15 @@ return_status_t stack_push(stack_ds_t* my_stack, sint32_t  value);
   * @param  value  pointer to the variable that will hold the popped value
   * @return return_status_t
   */
-return_status_t stack_pop(stack_ds_t* my_stack, uint32_t* value);
+return_status_t stack_pop(stack_ds_t* my_stack, sint32_t* value);
+
 /**
   * @brief  This function returns the top element of the stack
   * @param  my_stack  pointer to the stack
   * @param  value  pointer to the variable that will hold the top value
   * @return return_status_t
   */
-return_status_t stack_top(stack_ds_t* my_stack, uint32_t* value);
+return_status_t stack_top(stack_ds_t* my_stack, sint32_t* top);
 
 /**
   * @brief  This function returns the size of the stack
@@ -56,7 +63,7 @@ return_status_t stack_top(stack_ds_t* my_stack, uint32_t* value);
   * @param  stack_size  pointer to the variable that will hold the stack size
   * @return return_status_t
   */
-return_status_t stack_size(stack_ds_t* my_stack, uint32_t* stack_size);
+return_status_t stack_size(stack_ds_t* my_stack, sint32_t* size);
 
 /**
   * @brief  This function displays the stack

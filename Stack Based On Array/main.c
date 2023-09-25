@@ -57,12 +57,12 @@ int main()
 		{
 			printf("Stack pop value = %i \n", stack_pop_value);
 		}
-		ret = stack_pop(&stack1, &stack_pop_value);
+		ret = stack_pop(&stack1, &stack_pop_value); // Fail
 		if (R_OK == ret)
 		{
 			printf("Stack pop value = %i \n", stack_pop_value);
 		}
-		ret = stack_pop(&stack1, &stack_pop_value);
+		ret = stack_pop(&stack1, &stack_pop_value); // Fail
 		if (R_OK == ret)
 		{
 			printf("Stack pop value = %i \n", stack_pop_value);

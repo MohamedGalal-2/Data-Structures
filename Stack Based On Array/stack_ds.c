@@ -42,6 +42,7 @@ static stack_empty(stack_ds_t* my_stack)
 return_status_t stack_init(stack_ds_t* my_stack)
 {
 	return_status_t ret = R_NOK;
+
 	if (NULL == my_stack)
 	{
 		ret = R_NOK;
@@ -65,6 +66,7 @@ return_status_t stack_init(stack_ds_t* my_stack)
 return_status_t stack_push(stack_ds_t* my_stack, sint32_t  value)
 {
 	return_status_t ret = R_NOK;
+
 	if ((NULL == my_stack) || (STACK_FULL == stack_full(my_stack)))
 	{
 #ifdef STACK_DEBUG
@@ -94,6 +96,7 @@ return_status_t stack_push(stack_ds_t* my_stack, sint32_t  value)
 return_status_t stack_pop(stack_ds_t* my_stack, uint32_t* value)
 {
 	return_status_t ret = R_NOK;
+
 	if ((NULL == my_stack) || (NULL == value) || (STACK_EMPTY == stack_empty(my_stack)))
 	{
 #ifdef STACK_DEBUG
@@ -123,6 +126,7 @@ return_status_t stack_pop(stack_ds_t* my_stack, uint32_t* value)
 return_status_t stack_top(stack_ds_t* my_stack, uint32_t* value)
 {
 	return_status_t ret = R_NOK;
+
 	if ((NULL == my_stack) || (NULL == value) || (STACK_EMPTY == stack_empty(my_stack)))
 	{
 #ifdef STACK_DEBUG
@@ -150,7 +154,25 @@ return_status_t stack_top(stack_ds_t* my_stack, uint32_t* value)
   */
 return_status_t stack_size(stack_ds_t* my_stack, uint32_t* stack_size)
 {
+	return_status_t ret = R_NOK;
 
+	if ((NULL == my_stack) || (NULL == stack_size))
+	{
+#ifdef STACK_DEBUG
+		printf("Error!! \n");
+#endif
+		ret = R_NOK;
+	}
+	else
+	{
+		*stack_size = my_stack->stack_pointer + 1;
+#ifdef STACK_DEBUG
+		printf("Stack size is %d \n", *stack_size);
+#endif
+		ret = R_OK;
+	}
+
+	return ret;
 }
 
 /**
@@ -160,6 +182,26 @@ return_status_t stack_size(stack_ds_t* my_stack, uint32_t* stack_size)
   */
 return_status_t stack_display(stack_ds_t* my_stack)
 {
+	return_status_t ret = R_NOK;
+	sint32_t l_counter = ZERO_INIT;
 
+	if ((NULL == my_stack) || (STACK_EMPTY == stack_empty(my_stack)))
+	{
+#ifdef STACK_DEBUG
+		printf("Error!! Stack is Empty, Can't display any value!! \n");
+#endif
+		ret = R_NOK;
+	}
+	else
+	{
+		for (l_counter; l_counter < my_stack->stack_pointer + 1; l_counter++)
+		{
+			printf("Stack[%d] = %d \n", l_counter, my_stack->data[l_counter]);
+		}
+		ret = R_OK;
+	}
+
+
+	return ret;
 }
 

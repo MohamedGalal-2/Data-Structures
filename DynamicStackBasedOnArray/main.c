@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "DynamicStackBasedOnArray\dynamic_stack_ds.h"
+#include "dynamic_stack_ds.h"
 
 uint32_t stack1_size = 0;
 stack_ds_t* stack1 = NULL;

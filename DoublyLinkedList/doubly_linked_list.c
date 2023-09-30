@@ -1,5 +1,10 @@
 #include "doubly_linked_list.h"
 
+/** @brief This function inserts a node at the beginning of the list
+  * @param list: The list to be inserted in
+  * @param data: The data to be inserted
+  * @return void
+  */
 void node_insert_beginning(node_t** list, uint32_t data)
 {
 	node_t* tempNode = (node_t*)malloc(sizeof(node_t));
@@ -28,6 +33,11 @@ void node_insert_beginning(node_t** list, uint32_t data)
 	}
 }
 
+/** @brief This function inserts a node at the end of the list
+  * @param list: The list to be inserted in
+  * @param data: The data to be inserted
+  * @return void
+  */
 void node_insert_end(node_t** list, uint32_t data)
 {
 	node_t* tempNode = (node_t*)malloc(sizeof(node_t));
@@ -71,6 +81,12 @@ void node_insert_end(node_t** list, uint32_t data)
 	}
 }
 
+/** @brief This function inserts a node at a specific position in the list
+  * @param list: The list to be inserted in
+  * @param data: The data to be inserted
+  * @param position: The position to be inserted at
+  * @return void
+  */
 void node_insert_after(node_t** list, uint32_t data, uint32_t position)
 {
 	uint32_t counter = COUNTER_INIT;
@@ -112,6 +128,11 @@ void node_insert_after(node_t** list, uint32_t data, uint32_t position)
 
 }
 
+/**
+  * @brief This function deletes a node from the beginning of the list
+  * @param list: The list to be deleted from
+  * @return void
+ */
 void node_delete_beginning(node_t** list)
 {
 	node_t* tempNode = NULL;
@@ -136,6 +157,11 @@ void node_delete_beginning(node_t** list)
 	}
 }
 
+/**
+  * @brief This function deletes a node from the end of the list
+  * @param list: The list to be deleted from
+  * @return void
+ */
 void node_delete_end(node_t** list)
 {
 	uint32_t counter = COUNTER_INIT;
@@ -164,6 +190,12 @@ void node_delete_end(node_t** list)
 	}
 }
 
+/**
+  * @brief This function deletes a node from a specific position in the list
+  * @param list: The list to be deleted from
+  * @param position: The position to be deleted from
+  * @return void
+ */
 void node_delete_specific(node_t** list, uint32_t position)
 {
 	uint32_t counter = COUNTER_INIT;
@@ -209,6 +241,11 @@ void node_delete_specific(node_t** list, uint32_t position)
 	}
 }
 
+/**
+  * @brief This function displays the list in the forward direction
+  * @param list: The list to be displayed
+  * @return void
+  */
 void node_display_forward(node_t* list)
 {
 	uint32_t counter = 1;
@@ -221,6 +258,11 @@ void node_display_forward(node_t* list)
 	printf("NULL \n");
 }
 
+/**
+  * @brief This function displays the list in the backward direction
+  * @param list: The list to be displayed
+  * @return void
+  */
 void node_display_backward(node_t** list)
 {
 	uint32_t counter = 1;
@@ -239,7 +281,11 @@ void node_display_backward(node_t** list)
 	}
 	printf("NULL \n");
 }
-
+/**
+  * @brief This function reverses the list
+  * @param list: The list to be reversed
+  * @return void
+  */
 void node_reverse(node_t** list)
 {
 	uint32_t listSize = node_size(*list);
@@ -268,6 +314,11 @@ void node_reverse(node_t** list)
 
 }
 
+/**
+  * @brief This function returns the size of the list
+  * @param list: The list to be reversed
+  * @return counter: The size of the list
+  */
 uint32_t node_size(node_t* list)
 {
 	uint32_t counter = 0;

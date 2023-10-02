@@ -31,7 +31,7 @@ typedef enum
   * @param[in] queue_Max_Size: maximum number of elements in the queue
   * @return queue_t*: pointer to the queue object
   */
-queue_t* queue_init(queue_status_t* ret_status, uint32_t queue_Max_Size);
+queue_t* queue_init(uint32_t queue_Max_Size, queue_status_t* ret_status);
 
 /**
   * @brief This function enqueues an element in the queue

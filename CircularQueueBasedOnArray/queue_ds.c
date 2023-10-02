@@ -70,7 +70,7 @@ static queue_status_t queue_empty(queue_t* queue)
   * @param[in] queue_Max_Size: maximum number of elements in the queue
   * @return queue_t*: pointer to the queue object
   */
-queue_t* queue_init(queue_status_t* ret_status, uint32_t queue_Max_Size)
+queue_t* queue_init(uint32_t queue_Max_Size, queue_status_t* ret_status)
 {
 	queue_t* my_Queue;
 	/* Create queue object in the heap to hold the queue information */
@@ -120,14 +120,14 @@ queue_status_t queue_enqueue(queue_t* queue, void* data)
 
 	if (NULL == queue)
 	{
-		ret = QUEUE_NULL_POINTER; /* NULL pointer passed to the function */
+		ret = QUEUE_NOK; /* NULL pointer passed to the function */
 	}
 	else
 	{
 		/* Validate if the queue is not full */
 		if (QUEUE_FULL == queue_full(queue))
 		{
-			ret = QUEUE_FULL; /* Queue is full, can't enqueue new element */
+			ret = QUEUE_NULL_POINTER; /* Queue is full, can't enqueue new element */
 		}
 		else
 		{

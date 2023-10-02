@@ -1,4 +1,4 @@
-# Data-Structures
+# Data Structures
 This repository contains implementations of various data structures in C programming languages. The purpose of this repository is to train on data structures implementations.
 
 ## Table of Contents

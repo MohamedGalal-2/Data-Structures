@@ -13,7 +13,6 @@ License
 - [Contributing](#Contributing)
 - [License](#License)
 
-
 ### Prerequisites
 Before running any of the implementations, make sure you have the required environment set up for the specific programming language. Each implementation folder contains its own set of instructions on how to run or compile the code.
 

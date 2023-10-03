@@ -1,5 +1,6 @@
 # Data Structures
 This repository contains implementations of various data structures in C programming languages. The purpose of this repository is to train myself on the implementation of Data Structures in C.
+![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/Header.jpg)
 
 ## Table of Contents
 Prerequisites
@@ -12,8 +13,6 @@ License
 - [Data Structures](#Data-Structures)
 - [Contributing](#Contributing)
 - [License](#License)
-
-![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/Header.jpg)
 
 ### Prerequisites
 Before running any of the implementations, make sure you have the required environment set up for the specific programming language. Each implementation folder contains its own set of instructions on how to run or compile the code.

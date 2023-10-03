@@ -10,7 +10,7 @@ int main()
 	node_display_forward(head);
 
 	printf("--------------insert beginning--------------\n");
-	node_insert_beginning(&head, 20);
+	node_insert_beginning(&head, 25);
 	node_display_forward(head);
 
 	printf("--------------insert beginning--------------\n");
@@ -96,10 +96,6 @@ int main()
 	node_display_forward(head2);
 	node_reverse(&head2);
 	node_display_forward(head2);
-
-
-
-
 
 	return 0;
 }

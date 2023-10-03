@@ -50,16 +50,10 @@ return_status_t stack_init(stack_ds_t* my_stack)
 	if (NULL == my_stack)
 	{
 		ret = R_NOK;
-#ifdef STACK_DEBUG
-		printf("Error!! Stack wasn't initialized!!\n");
-#endif
 	}
 	else
 	{
 		my_stack->stack_pointer = -1;
-#ifdef STACK_DEBUG
-		printf("Stack initialized successfully !!\n");
-#endif
 		ret = R_OK;
 	}
 
@@ -78,17 +72,11 @@ return_status_t stack_push(stack_ds_t* my_stack, sint32_t data)
 	if ((NULL == my_stack) || (STACK_FULL == stack_full(my_stack)))
 	{
 		ret = R_NOK;
-#ifdef STACK_DEBUG
-		printf("Error!! Stack is full!!\n");
-#endif
 	}
 	else
 	{
 		my_stack->stack_pointer++;
 		my_stack->data[my_stack->stack_pointer] = data;
-#ifdef STACK_DEBUG
-		printf("Stack push value is (%i) \n", data);
-#endif
 		ret = R_OK;
 	}
 	return ret;
@@ -105,18 +93,12 @@ return_status_t stack_pop(stack_ds_t* my_stack, sint32_t* value)
 	return_status_t ret = R_NOK;
 	if ((NULL == my_stack) || (NULL == value) || (STACK_EMPTY == stack_empty(my_stack)))
 	{
-#ifdef STACK_DEBUG
-		printf("Error!! Stack is empty!!\n");
-#endif
 		ret = R_NOK;
 	}
 	else
 	{
 		*value = my_stack->data[my_stack->stack_pointer];
 		my_stack->stack_pointer--;
-#ifdef STACK_DEBUG
-		printf("The stack pop value is (%i) \n", *value);
-#endif
 		ret = R_OK;
 	}
 
@@ -135,16 +117,10 @@ return_status_t stack_top(stack_ds_t* my_stack, sint32_t* top)
 	if ((NULL == my_stack) || (NULL == top) || (STACK_EMPTY == stack_empty(my_stack)))
 	{
 		ret = R_NOK;
-#ifdef STACK_DEBUG
-		printf("Error!! Stack is empty!!\n");
-#endif
 	}
 	else
 	{
 		*top = my_stack->data[my_stack->stack_pointer];
-#ifdef STACK_DEBUG
-		printf("Stack top value is (%d)\n", *top);
-#endif
 		ret = R_OK;
 	}
 
@@ -163,16 +139,10 @@ return_status_t stack_size(stack_ds_t* my_stack, sint32_t* size)
 	if ((NULL == my_stack) || (NULL == size))
 	{
 		ret = R_NOK;
-#ifdef STACK_DEBUG
-		printf("Error!!\n");
-#endif
 	}
 	else
 	{
 		*size = my_stack->stack_pointer + 1;
-#ifdef STACK_DEBUG
-		printf("Stack size is (%i) \n", *size);
-#endif
 		ret = R_OK;
 	}
 
@@ -191,9 +161,6 @@ return_status_t stack_display(stack_ds_t* my_stack)
 	if (NULL == my_stack || (STACK_EMPTY == stack_empty(my_stack)))
 	{
 		ret = R_NOK;
-#ifdef STACK_DEBUG
-		printf("Error!! Stack is empty!!\n");
-#endif
 	}
 	else
 	{

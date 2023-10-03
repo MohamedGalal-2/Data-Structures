@@ -3,7 +3,7 @@ This repository contains implementations of some data structures in C programmin
 ![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/Header.jpg)
 
 ## Table of Contents
-- [What does data structure mean](#What-does-data-structure-mean)
+- [What does data structure mean?](#What-does-data-structure-mean)
 - [Prerequisites](#Prerequisites)
 - [Repository Structure](#Repository-Structure)
 - [Contributing](#Contributing)

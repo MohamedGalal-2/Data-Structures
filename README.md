@@ -17,7 +17,8 @@ Data structures are designed to optimize the use of computer memory and processi
 ### Prerequisites
 Before running any of the implementations, make sure you have the required environment set up for the specific programming language. Each implementation folder contains its own set of instructions on how to run or compile the code.
 
-### Data Structures
+### Repository Structure
+This repository contains the following data structures implementation in C:
 1. Static Stack Based on Array
 2. Dynamic Stack Based on Array
 3. Singly Linked List

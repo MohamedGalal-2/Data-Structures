@@ -13,7 +13,7 @@ License
 - [Contributing](#Contributing)
 - [License](#License)
 
-![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/DsHeader.jpeg?raw=true)
+![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/Header.jpg)
 
 ### Prerequisites
 Before running any of the implementations, make sure you have the required environment set up for the specific programming language. Each implementation folder contains its own set of instructions on how to run or compile the code.

@@ -3,13 +3,13 @@ This repository contains implementations of some data structures in C programmin
 ![Header image](https://github.com/MohamedGalal-2/Data-Structures/blob/main/Header.jpg)
 
 ## Table of Contents
-- [What does data structure mean?](#What-does-data-structure-mean)
+- [What does data structure mean?](#What-does-data-structure-mean?)
 - [Prerequisites](#Prerequisites)
 - [Repository Structure](#Repository-Structure)
 - [Contributing](#Contributing)
 - [License](#License)
 
-### What does data structure mean
+### What does data structure mean?
 Data structures refer to a particular way of organizing and manipulating data in a computer so that it can be efficiently accessed and manipulated. It provides a way to store and organize data in memory in a way that allows for efficient access, insertion, deletion, and retrieval operations.
 
 Data structures are designed to optimize the use of computer memory and processing power, reducing the complexity or optimizing the efficiency of various operations performed on data. They define rules and mechanisms for organizing and storing data in a computer's memory, which allows for quick and efficient access and manipulation of the data.

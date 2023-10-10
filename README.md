@@ -4,7 +4,7 @@ This repository contains implementations of some data structures in C programmin
 
 ## Table of Contents
 - [What does data structure mean](#What-does-data-structure-mean)
-- [Prerequisites](#Prerequisites)
+- [Getting Started](#Getting-Started)
 - [Repository Structure](#Repository-Structure)
 - [Contributing](#Contributing)
 - [License](#License)
@@ -14,8 +14,20 @@ Data structures refer to a particular way of organizing and manipulating data in
 
 Data structures are designed to optimize the use of computer memory and processing power, reducing the complexity or optimizing the efficiency of various operations performed on data. They define rules and mechanisms for organizing and storing data in a computer's memory, which allows for quick and efficient access and manipulation of the data.
 
-### Prerequisites
-Before running any of the implementations, make sure you have the required environment set up for the specific programming language. Each implementation folder contains its own set of instructions on how to run or compile the code.
+### Getting Started
+To get started with this repository, follow these steps:
+
+1. Install C runtime environment on your system such as GCC (GNU Compiler Collection) or Microsoft Visual C++, or any other C development environment based on your operating system.
+
+2. Clone the repository using the following command:
+
+        git clone https://github.com/MohamedGalal-2/Grokking-Algorithms.git
+
+3. Navigate to the desired chapter's directory:
+
+        cd Grokking-Algorithms/"Chapter x"
+  
+4. Run the source files using the your desired IDE and Compiler. 
 
 ### Repository Structure
 This repository contains the following data structures implementation in C:

@@ -31,11 +31,11 @@ To get started with this repository, follow these steps:
 
 ### Repository Structure
 This repository contains the following data structures implementation in C:
-1. Static Stack Based on Array
-2. Dynamic Stack Based on Array
-3. Singly Linked List
-4. Doubly Linked List
-5. Dynamic Circular Queue
+1. [Static Stack Based on Array](https://github.com/MohamedGalal-2/Data-Structures/tree/main/Static_Stack)
+2. [Dynamic Stack Based on Array](https://github.com/MohamedGalal-2/Data-Structures/tree/main/Dynamic_Stack)
+3. [Singly Linked List](https://github.com/MohamedGalal-2/Data-Structures/tree/main/Singly_Linked_List)
+4. [Doubly Linked List](https://github.com/MohamedGalal-2/Data-Structures/tree/main/Doubly_Linked_List)
+5. [Dynamic Circular Queue](https://github.com/MohamedGalal-2/Data-Structures/tree/main/Dynamic_Circular_Queue)
 
 ### Contributing
 Contributions to this repository are always welcome. If you have any improvements or new implementations, feel free to submit a pull request. Please make sure to follow the contribution guidelines before submitting your changes.

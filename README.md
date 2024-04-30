@@ -41,4 +41,4 @@ This repository contains the following data structures implementation in C:
 Contributions to this repository are always welcome. If you have any improvements or new implementations, feel free to submit a pull request. Please make sure to follow the contribution guidelines before submitting your changes.
 
 ### License
-This repository is to train myself on implementing some of the Data Structures using C. Feel free to use and modify the code as per your requirements.
+This repository is licensed under the MIT License. Please see the LICENSE file for more information.
